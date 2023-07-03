@@ -1,0 +1,43 @@
+import { Typewriter } from 'react-simple-typewriter'
+import anonna from '../../../assets/anonna.png'
+
+const Banner = () => {
+    return (
+        <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#E3E7FA]">
+                <div className="flex justify-center items-center">
+
+                    <div>
+                        <div  >
+
+                            <h1 className="text-5xl lg:text-5xl  font-extrabold text-blue-900 px-10 mb-8">
+                                I Am  {' '}
+                                <span className="text-5xl lg:text-5xl  font-extrabold text-red-800 ">
+                                    {/* Style will be inherited from the parent element */}
+                                    <Typewriter
+                                        words={[' Web Developer', 'Graphic Designer']}
+                                        loop={10}
+                                        cursor
+                                        cursorStyle='|'
+                                        typeSpeed={70}
+                                        deleteSpeed={50}
+                                        delaySpeed={1000}
+
+                                    />
+
+                                </span>
+                            </h1>
+                        </div>
+                        <button className=" btn bg-red-800 text-white hover:bg-blue-900">Get Started!</button>
+                    </div>
+                </div>
+                <div className='flex justify-center items-center'>
+                    <img src={anonna} />
+                </div>
+
+            </div>
+        </div>
+    );
+};
+
+export default Banner;
