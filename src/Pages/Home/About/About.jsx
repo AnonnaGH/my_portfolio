@@ -5,7 +5,7 @@ const About = () => {
         <div id="about-me">
             <div data-aos="fade-right" className='grid md:grid-cols-2 lg:grid-cols-2 '>
                 <div >
-                    <img className='rounded mx-auto h-auto w-3/4' src="" alt="" />
+                    <img className='rounded mx-auto h-auto w-3/4' src="https://img.freepik.com/premium-vector/muslim-women-working-computer-flat-illustration_520836-17.jpg?w=2000" alt="" />
                 </div>
                 <div className='flex justify-center items-center'>
                     <div className='text-center md:text-left lg:text-left mt-4 px-3 md:mt-0 lg:mt-0 md:px-0 lg:px-0'>

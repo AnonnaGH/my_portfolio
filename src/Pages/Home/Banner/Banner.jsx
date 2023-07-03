@@ -10,7 +10,7 @@ const Banner = () => {
                     <div>
                         <div  >
 
-                            <h1 className="text-5xl lg:text-5xl  font-extrabold text-blue-900 px-10 mb-8">
+                            <h1 className="text-5xl lg:text-5xl  my-20 lg:mb-8 md:mb-8 md:my-0 lg:my-0  font-extrabold text-blue-900 px-10 ">
                                 I Am  {' '}
                                 <span className="text-5xl lg:text-5xl  font-extrabold text-red-800 ">
                                     {/* Style will be inherited from the parent element */}
@@ -28,7 +28,7 @@ const Banner = () => {
                                 </span>
                             </h1>
                         </div>
-                        <button className=" btn bg-red-800 text-white hover:bg-blue-900">Get Started!</button>
+                        <button className=" btn bg-red-800 w-full text-white hover:bg-blue-900">Download Resume</button>
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>

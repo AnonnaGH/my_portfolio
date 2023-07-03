@@ -1,3 +1,5 @@
+import BackToTop from "../../../Shared/BackToTop/BackToTop";
+import Footer from "../../../Shared/Footer/Footer";
 import Navbar from "../../../Shared/Navbar/Navbar";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
@@ -8,13 +10,15 @@ import Projects from "../Projects/Projects";
 
 const Home = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <Navbar></Navbar>
             <Banner></Banner>
             <About></About>
             <MySkills></MySkills>
             <Projects></Projects>
             <Contact></Contact>
+            <Footer></Footer>
+            <BackToTop></BackToTop>
         </div>
     );
 };

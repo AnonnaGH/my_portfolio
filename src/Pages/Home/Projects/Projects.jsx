@@ -3,16 +3,22 @@ import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
 import project1 from '../../../assets/project1.png'
 import project2 from '../../../assets/project2.png'
 import project3 from '../../../assets/project3.png'
+import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1500 });
+    }, [])
     return (
-        <div>
+        <div id="my-projects">
             <SectionTitle heading={"My Projects"}></SectionTitle>
 
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
 
                 {/* Project 1 */}
-                <div className="hover:shadow-xl border">
+                <div data-aos="fade-up" className="hover:shadow-xl border">
                     <div className=" p-4 rounded-lg">
 
                         <div className="relative max-w-full h-72 overflow-hidden rounded-lg">
@@ -52,7 +58,7 @@ const Projects = () => {
                         </div>
                         <hr className="my-4" />
                         <div className=" mx-auto flex justify-center items-center gap-4 my-10">
-                            <div className="flex gap-4">
+                            <div className="flex gap-1">
                                 <a
                                     href="https://toyland-f61c7.web.app/"
                                     target="_blank"
@@ -60,7 +66,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLinkExternal className="text-2xl me-2" />
-                                    <span>Live Preview</span>
+                                    <span>Live</span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/toy-land-client"
@@ -69,7 +75,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2 " />
-                                    <span>Client Code</span>
+                                    <span>Client</span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/toy-land-server"
@@ -78,7 +84,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2" />
-                                    <span>Server Code</span>
+                                    <span>Server</span>
                                 </a>
                             </div>
                         </div>
@@ -93,7 +99,7 @@ const Projects = () => {
 
 
                 {/* project 2 */}
-                <div className="hover:shadow-xl border">
+                <div data-aos="fade-up" className="hover:shadow-xl border">
                     <div className=" p-4 rounded-lg">
 
                         <div className="relative max-w-full h-72 overflow-hidden rounded-lg">
@@ -135,7 +141,7 @@ const Projects = () => {
                         </div>
                         <hr className="my-4" />
                         <div className=" mx-auto flex justify-center items-center gap-4 my-10">
-                            <div className="flex gap-4">
+                            <div className="flex gap-1">
                                 <a
                                     href="https://taste-tracker.web.app"
                                     target="_blank"
@@ -143,7 +149,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLinkExternal className="text-2xl me-2" />
-                                    <span>Live Preview</span>
+                                    <span>Live </span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/taste-tracker-client"
@@ -152,7 +158,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2 " />
-                                    <span>Client Code</span>
+                                    <span>Client</span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/taste-tracker-server"
@@ -161,7 +167,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2" />
-                                    <span>Server Code</span>
+                                    <span>Server</span>
                                 </a>
                             </div>
                         </div>
@@ -176,7 +182,7 @@ const Projects = () => {
 
 
                 {/* project 3 */}
-                <div className="hover:shadow-xl border">
+                <div data-aos="fade-up" className="hover:shadow-xl border">
                     <div className=" p-4 rounded-lg">
 
                         <div className="relative max-w-full h-72 overflow-hidden rounded-lg">
@@ -218,7 +224,7 @@ const Projects = () => {
                         </div>
                         <hr className="my-4" />
                         <div className=" mx-auto flex justify-center items-center gap-4 my-10">
-                            <div className="flex gap-4">
+                            <div className="flex gap-1">
                                 <a
                                     href="https://graphic-design-school.web.app"
                                     target="_blank"
@@ -226,7 +232,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLinkExternal className="text-2xl me-2" />
-                                    <span>Live Preview</span>
+                                    <span>Live</span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/design-school-client"
@@ -235,7 +241,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2 " />
-                                    <span>Client Code</span>
+                                    <span>Client</span>
                                 </a>
                                 <a
                                     href="https://github.com/AnonnaGH/Design_School_server"
@@ -244,7 +250,7 @@ const Projects = () => {
                                     className="btn btn-outline hover:bg-blue-700 flex justify-center items-center"
                                 >
                                     <BiLogoGithub className="text-2xl me-2" />
-                                    <span>Server Code</span>
+                                    <span>Server</span>
                                 </a>
                             </div>
                         </div>

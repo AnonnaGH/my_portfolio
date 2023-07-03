@@ -61,16 +61,14 @@ const Skills = [
 
 const MySkills = () => {
     return (
-        <div>
+        <div id="my-skills" className="my-32">
             <SectionTitle heading={"My Skills"}></SectionTitle>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
-                <div>
-                    <Lottie animationData={web}></Lottie>
-                </div>
-                <div className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-10">
+
+                <div className="grid  grid-cols-4 md:grid-cols-3 lg:grid-cols-3 gap-4">
                     {
                         Skills.map((skill, index) => (
-                            <div data-aos="zoom-in" key={index} className="border     flex justify-center items-center  shadow-lg  hover:bg-[#E3E7FA] hover:scale-105 transition-all transform duration-300">
+                            <div data-aos="zoom-in" key={index} className="border  pt-4   flex justify-center items-center  shadow-lg  hover:bg-[#E3E7FA] hover:scale-105 transition-all transform duration-300">
                                 <div>
                                     <img className="w-1/4 mx-auto"
                                         src={skill.imageSrc}
@@ -82,6 +80,9 @@ const MySkills = () => {
                         ))
                     }
 
+                </div>
+                <div className=" ">
+                    <Lottie animationData={web}></Lottie>
                 </div>
             </div>
 
